@@ -54,9 +54,6 @@ $V(r,\theta,\phi,t)$ = $a$ $\sum_{n=1}{^{N_{max}}}$ $(\frac{a}{r})^{n+1}$ $\sum_
 
 A linear predictive secular variation model for 5 years from 2015 with Nmax = 8 (Secular variation is taken as a linear interpolation between main field models at earlier epochs)
 
-$\dot{V}(r,\theta,\phi,t)$ = $a$ $\sum_{n=1}^8$ $(\frac{a}{r})^{n+1}$ $\sum_{m=0}{^n}$ $\left[ \dot{g}^m_n cos(m\phi) + \dot{h}^m_n sin(m\phi) \right]$ $P^m_n (cos\theta)$
-
-
 IGRF-13:
 - 11 candidate MF models for 2015 (DGRF).
 - 12 candidate MF models for 2020 (IGRF).
