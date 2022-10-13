@@ -27,13 +27,13 @@ In practice a signal may not be band-limited. If the signal includes frequency $
 Then Collect monthly samples and Smooth by means of a suitable filter attempt to preserve as much information as possible in the frequency band.
 
 
-## Section 2: 
-### Data Visualisation: [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
+## Section 2: Data Visualisation
+### [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
 
 The goal of this notebooK is to 
 
-## Section 3: 
-### – Spherical Harmonic Model of Geomagnetic Field : [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
+## Section 3: Spherical Harmonic Model of Geomagnetic Field
+### [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
 
 
 
