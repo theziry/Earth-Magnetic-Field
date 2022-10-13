@@ -49,12 +49,11 @@ IGRF is An IAGA ‘flagship product’
 IGRF-13 is a Main Field Models every 5 years from 1900 with Nmax = 10 to 1995 and Nmax = 13 for 2000 to 2020. D(efinitive)GRF up to 2015
 
 
-${V(r,\theta,\phi,t)}$ = ${a}$${\sum_{n=1}^N_max}$${(\frac{a}{r})^{n+1}}$${\sum_{m=0}^n}$${(${g^m_n}$${(t)}$${cos(m\phi)}$+${h^m_n}$${(t)}$ ${sin(m\phi)}$)}$${P^m_n}$${(cos\theta)}$
+![\Large ${V(r,\theta,\phi,t)}$ = ${a}$${\sum_{n=1}^N_max}$${(\frac{a}{r})^{n+1}}$${\sum_{m=0}^n}$${(${g^m_n}$${(t)}$${cos(m\phi)}$+${h^m_n}$${(t)}$ ${sin(m\phi)}$)}$${P^m_n}$${(cos\theta)}$](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
 
 
 (Nmax = 13 is chosen to avoid contamination by crustal fields)
-
 IGRF-13:
 - 11 candidate MF models for 2015 (DGRF).
 - 12 candidate MF models for 2020 (IGRF).
