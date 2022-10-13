@@ -61,7 +61,7 @@ A scientific disadvantage is that it’s difficult to include uncertainty estima
 
 
 
-
+$\sum_{n=1}^{N_{max}}$
 
 
 
