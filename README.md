@@ -18,11 +18,16 @@ The remainder of this work is organised in three sections as follows:
 
 In this section, I first started generating Synthetic timeseries data that contains a single harmonic component of period of 10 years sampled each month than I deepen my analysis using real data; using long series of Chambon-la-Forêt (CLF) observatory data which are monthly means, and we discuss the observed SV evolutions over time. 
 In both parts (synthetic and real), I performed a spectral analysis on the signals and applied a Butterworth filters. 
+Looking through a finite duration ‘window’ at the signal (Regard as a multiplication in the time domain.) the consequence is there is a spectral leakage.
+Take samples but the Fourier Transform is periodic. Therefore, to extract information at a particular frequency at least two samples per cycle must be taken, and this leads to the concept of the Nyquist frequency e.g. if the sampling rate is 10Hz, the maximum resolvable frequency is 5Hz
+If there are higher frequencies present in the signal they are aliased – they masquerade as lower frequencies. 
+
+To resolve a sinusoidal signal it must be sampled at least twice per cycle. If the sampling rate is $f_samp$ then the maximum resolvable frequency is the $Nyquist$ $frequency$: $fn= fsamp /2$
 
 ## Section 2: 
 ### Data Visualisation: [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
 
-The goal of this first noteboo
+The goal of this notebooK is to 
 
 ## Section 3: 
 ### – Spherical Harmonic Model of Geomagnetic Field : [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
