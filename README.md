@@ -50,7 +50,7 @@ IGRF-13 is a Main Field Models every 5 years from 1900 with Nmax = 10 to 1995 an
 
 
 \begin{align}
-V(r,${\theta}$,${\phi}$,t) & = a\sum_{n=1}^N_max(\frac{a}{r})^{n+1}\sum_{m=0}^n(g^m_n(t)cos(m\phi) + h^m_n(t)sin(m\phi))P^m_ncos(\theta)
+V(r,\theta,\phi,t) & = a\sum_{n=1}^N_max (\frac{a}{r})^{n+1} \sum_{m=0}^n (g^m_n(t) cos(m\phi) + h^m_n(t) sin(m\phi)) P^m_n(cos\theta)
 \end{align}
 
 
