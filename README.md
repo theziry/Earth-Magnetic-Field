@@ -1,8 +1,5 @@
 # Earth Magnetic Field
-
-This project aims to study and model the Earth Magnetic Field Using Geomagnetic Observatory Data.
-
-# Project Description:
+## Overview:
 
 Very early in the study of the Earth’s magnetism, it had been realised that the magnetic field 𝐁 is changing with time. The proper description of this evolution came with the setting of magnetic observatories from the middle of the nineteenth century onward. The general assumption was that most of observed fast variations in 𝐁(t) were due to external fields perturbations, while the dominant core field varied slowly over time.
 
@@ -11,10 +8,14 @@ The evolution of this secular variation has also been studied in terms of secula
 
 The crucial issue regarding field models derived from magnetic data is their temporal resolution. Observatory time series show a temporal spectrum S(f) in the range of periods from ≈ 70 yrs down to a couple of years. This property, which is coherent with the existence of geomagnetic jerks, is also recovered in time series of the geomagnetic Gauss coefficients. 
 
-The remainder of this work is organised in three sections as follows: 
+# Project Description:
 
-## Section 1: 
-### Signal processing: [1-EMF-Signal_Processing.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/1-EMF-Signal_Processing.ipynb)
+This project aims to study and model the Earth Magnetic Field Using Geomagnetic Observatory Data.
+
+The remainder of this work is organised in three sections (three notebooks) as follows: 
+
+## Section 1: Signal processing
+### [1-EMF-Signal_Processing.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/1-EMF-Signal_Processing.ipynb)
 
 In this first notebook, I first started generating Synthetic timeseries data that contains a single harmonic component of period of $10 years$ sampled each month, than I deepen my analysis using real data; using long series of Chambon-la-Forêt ($CLF$) observatory data which are monthly means, and discussing the observed SV evolutions over time.  
 In both parts (synthetic and real), I performed a spectral analysis on the signals and applied a Butterworth filters. 
@@ -33,3 +34,10 @@ The goal of this notebooK is to
 
 ## Section 3: 
 ### – Spherical Harmonic Model of Geomagnetic Field : [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
+
+
+
+
+# References:
+- Malin, S. R. . and Barraclough, D., (1981). An algorithm for synthesizing the geomagnetic field, Computers & Geosciences. Pergamon, 7(4), pp. 401–405. doi: 10.1016/0098-3004(81)90082-0.
+- 
