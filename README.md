@@ -57,6 +57,8 @@ A linear predictive secular variation model for 5 years from 2015 with Nmax = 8
 
 $\sum_{n=1}^N_{max}$
 
+$\sum^N{max}^_{n=1}$
+
 IGRF-13:
 - 11 candidate MF models for 2015 (DGRF).
 - 12 candidate MF models for 2020 (IGRF).
