@@ -48,13 +48,13 @@ IGRF is An IAGA ‘flagship product’
 
 [IGRF-13](https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html) is a Main Field Models every 5 years from 1900 with Nmax = 10 to 1995 and Nmax = 13 for 2000 to 2020. D(efinitive)GRF up to 2015
 
-$V(r,\theta,\phi,t)$ = $a$ $\sum_{n=1}{^{N_{max}}}$ $( \frac{a}{r} )^{n+1}$ $\sum_{m=0}{^n}$ $( g^m_n (t) cos(m\phi) + h^m_n (t) sin(m\phi) )$ $P^m_n (cos\theta)$
+$V(r,\theta,\phi,t)$ = $a$ $\sum_{n=1}{^{N_{max}}}$ $(\frac{a}{r})^{n+1}$ $\sum_{m=0}{^n}$ $( g^m_n (t) cos(m\phi) + h^m_n (t) sin(m\phi) )$ $P^m_n (cos\theta)$
 
 (Nmax = 13 is chosen to avoid contamination by crustal fields)
 
 A linear predictive secular variation model for 5 years from 2015 with Nmax = 8 (Secular variation is taken as a linear interpolation between main field models at earlier epochs)
 
-$\dot{V}(r,\theta,\phi,t)$ = $a$ $\sum_{n=1}{^8}$ $( \frac{a}{r} )^{n+1}$ $\sum_{m=0}{^n}$ $\left[ \dot{g}^m_n cos(m\phi) + \dot{h}^m_n sin(m\phi) \right]$ $P^m_n (cos\theta)$
+$\dot{V}(r,\theta,\phi,t)$ = $a$ $\sum_{n=1}^8$ $(\frac{a}{r})^{n+1}$ $\sum_{m=0}{^n}$ $\left[ \dot{g}^m_n cos(m\phi) + \dot{h}^m_n sin(m\phi) \right]$ $P^m_n (cos\theta)$
 
 
 IGRF-13:
