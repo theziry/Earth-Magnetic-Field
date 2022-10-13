@@ -40,4 +40,4 @@ The goal of this notebooK is to
 
 # References:
 - Malin, S. R. . and Barraclough, D., (1981). An algorithm for synthesizing the geomagnetic field, Computers & Geosciences. Pergamon, 7(4), pp. 401–405. doi: 10.1016/0098-3004(81)90082-0.
-- 
+- Lesur,V. . Gillet, N. . Hammer M. D. & Mandea M. (2022). Rapid Variations of Earth’s Core Magnetic Field, Surveys in Geophysics volume 43, pages41–69. doi: 10.1007/s10712-021-09662-4.
