@@ -37,6 +37,29 @@ The goal of this notebooK is to
 
 In this section, I build a model capable of representing my data
 
+#### The International Geomagnetic Reference Field (IGRF):
+IGRF is An IAGA ‘flagship product’
+- First produced 1965
+- The International Geomagnetic Reference Field (IGRF) is a series of mathematical models describing the large-scale internal part of the Earth’s magnetic field between epochs 1900 A.D. and the present.
+- The IGRF is used by scientists in studies of dynamics of the core field, space weather, local crustal magnetic field. It is also used by commercial organizations as a source of orientation information.
+- The latest version is IGRF-13
+
+##### IGRF – a collaborative effort:
+
+IGRF-13:
+- 11 candidate MF models for 2015 (DGRF).
+- 12 candidate MF models for 2020 (IGRF).
+- 14 candidate SV models for 2020-2025.
+A scientific disadvantage is that it’s difficult to include uncertainty estimates for the Gauss coefficients.
+
+
+
+
+
+
+
+
+
 
 # References:
 - Malin, S. R. . and Barraclough, D., (1981). An algorithm for synthesizing the geomagnetic field, Computers & Geosciences. Pergamon, 7(4), pp. 401–405. doi: 10.1016/0098-3004(81)90082-0.
