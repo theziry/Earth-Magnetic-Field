@@ -20,9 +20,9 @@ In this section, I first started generating Synthetic timeseries data that conta
 In both parts (synthetic and real), I performed a spectral analysis on the signals and applied a Butterworth filters. 
 
 ## Section 2: 
-### Data Visualisation: 2-EMF-Observatory-Data-Visualisation.ipynb
+### Data Visualisation: [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
 
 The goal of this first noteboo
 
 ## Section 3: 
-### – Spherical Harmonic Model of Geomagnetic Field : 3-Spherical-Harmonic-Models .ipynb 
+### – Spherical Harmonic Model of Geomagnetic Field : [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
