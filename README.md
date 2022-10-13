@@ -22,7 +22,7 @@ Looking through a finite duration ‘window’ at the signal (Regard as a multip
 Take samples but the Fourier Transform is periodic. Therefore, to extract information at a particular frequency at least two samples per cycle must be taken, and this leads to the concept of the Nyquist frequency e.g. if the sampling rate is 10Hz, the maximum resolvable frequency is 5Hz
 If there are higher frequencies present in the signal they are aliased – they masquerade as lower frequencies. 
 
-To resolve a sinusoidal signal it must be sampled at least twice per cycle. If the sampling rate is $f_samp$ then the maximum resolvable frequency is the $Nyquist$ $frequency$: $fn= fsamp /2$
+To resolve a sinusoidal signal it must be sampled at least twice per cycle. If the sampling rate is $f_{samp}$ then the maximum resolvable frequency is the $Nyquist$ $frequency$: $fn= f_{samp}/2$
 
 ## Section 2: 
 ### Data Visualisation: [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
