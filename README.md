@@ -120,5 +120,6 @@ A scientific disadvantage is that it’s difficult to include uncertainty estima
 
 
 # References:
-- Malin, S. R. . and Barraclough, D., (1981). An algorithm for synthesizing the geomagnetic field, Computers & Geosciences. Pergamon, 7(4), pp. 401–405. doi: 10.1016/0098-3004(81)90082-0.
-- Lesur,V. . Gillet, N. . Hammer M. D. & Mandea M. (2022). Rapid Variations of Earth’s Core Magnetic Field, Surveys in Geophysics volume 43, pages41–69. doi: 10.1007/s10712-021-09662-4.
+- S. R Malin,  & D. Barraclough,. (1981). An algorithm for synthesizing the geomagnetic field, Computers & Geosciences. Pergamon, 7(4), pp. 401–405. doi: 10.1016/0098-3004(81)90082-0.
+- V. Lesur, N. Gillet, M. D. Hammer & M. Mandea,. (2022). Rapid Variations of Earth’s Core Magnetic Field, Surveys in Geophysics volume 43, pages41–69. doi: 10.1007/s10712-021-09662-4.
+- S. Macmillan, & N. Olsen,. (2013). Observatory data and the Swarm mission,  Earth, Planets and Space volume 65, 1355–1362, doi:10.5047/eps.2013.07.011
