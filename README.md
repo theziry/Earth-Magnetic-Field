@@ -15,7 +15,7 @@ This project aims to study and model the Earth Magnetic Field Using Geomagnetic 
 The remainder of this work is organised in three sections (three notebooks) as follows: 
 
 ## Section 1: Signal processing
-### [1-EMF-Signal_Processing.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/1-EMF-Signal_Processing.ipynb)
+## [1-EMF-Signal_Processing.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/1-EMF-Signal_Processing.ipynb)
 
 In this first notebook, I first started generating Synthetic timeseries data that contains a single harmonic component of period of $10 years$ sampled each month, than I deepen my analysis using real data; using long series of Chambon-la-Forêt $(CLF)$ observatory data which are monthly means, and discussing the observed Secular Variation evolutions over time.  
 
@@ -28,11 +28,28 @@ In practice a signal may not be band-limited. If the signal includes frequency $
 
 
 ## Section 2: Data Visualisation
-### [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
+## [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
 
 The aim of this notebook is to fetch & load Geomagnetic data at ground observatories; download the data for a given observatory for a given year, and load them as a Pandas Dataframe.
 
 [INTERMAGNET](https://intermagnet.github.io/) is the International Real-time Magnetic Observatory Network, is the global network of observatories, monitoring the Earth's magnetic field. The [INTERMAGNET](https://intermagnet.github.io/) programme establishes a global network of cooperating geomagnetic observatories. It helps adopting modern standard specifications for measuring and recording equipment in order to facilitate data exchanges and the production of geomagnetic data in close to real time. In this notebooK we demonstrate geomagnetic ground observatory data access through [VirES](https://vires.services/) to access some ground observatory data.
+
+[VirES](https://vires.services/) (Virtual environments for Earth Scientists) is a platform for data & model access, analysis, and visualisation for ESA’s magnetic mission, Swarm. 
+
+### VirES Configuration: 
+viresclient is the Python interface to VirES.  In order to authenticate access to the VirES server, viresclient requires an access token - this ties communications between the server and the client to your account. 
+If you are running viresclient on a different machine, you will need to follow these instructions:
+- Create a user account at https://vires.services if you haven’t already done so
+- Install viresclient in your Python environment - see https://viresclient.readthedocs.io/en/latest/installation.html
+- Create a new code cell here and execute the following:
+         >>    from viresclient import set_token
+         >>    set_token("https://vires.services/ows", set_default=True)
+- You will now be directed to the VirES token management page, and prompted to generate a new token and enter it here.
+
+Your access token should now have been saved to your environment and you won’t need to provide it again. The token and its associated access URL are stored in a file: ~/.viresclient.ini (this file can also be edited directly). You may generate and set a new token, or revoke old tokens, at any point. These are similar to passwords, so should be kept secret - if you accidentally leak a token, you can revoke it at the token management page and generate a new one.
+
+### Fetching some data:
+
 Data are available as three collections: 1 second and 1 minute cadences (INTERMAGNET definitive & quasi-definitive data), as well as specially derived hourly means over the past century (WDC).
 
 ![Data_Load.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Data_Load.png)
@@ -58,10 +75,7 @@ Next we summarise the data further by aggregating measurements over each month, 
 
 ![Declination_1936_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1936_2020.png) ![Declination_1986_2003.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1986_2003.png) ![Declination_2000_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_2000_2020.png)
 
-In the following section, the hourly mean values for 2003 at CLF Observatory are plotted ordered by Bartels rotation number. (Solar rotations are numbered by the Bartels solar rotation number, with Day 1 of rotation 1 chosen as 8th February 1832)
-
-![Declination_1936_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1936_2020.png,https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1986_2003.png,https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_2000_2020.png)
-
+In the following section, the hourly mean values for 2003 at CLF Observatory are plotted ordered by Bartels rotation number. (Solar rotations are numbered by the Bartels solar rotation number, with Day 1 of rotation 1 chosen as 8th February 1832).
 
 ![CLF_Bartels_rotation_number.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/CLF_Bartels_rotation_number.png)
 
@@ -71,21 +85,6 @@ The plot shows a number of the features of geomagnetic field behaviour:
 - Although substantially attenuated by taking hourly means, times of magnetic disturbances are obvious.
 - The rows are plotted 27 days long because the equatorial rotation period, as seen from Earth, is approximately 27 days. As a result, if a region on the Sun responsible for a disturbance on one day survives a full rotation, it may cause a further disturbance 27 days later and this will line up vertically in the plots. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Virtual Observatories:
 
 
@@ -93,18 +92,18 @@ The plot shows a number of the features of geomagnetic field behaviour:
 
 
 ## Section 3: Modelling the Geomagnetic Field
-### [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
+## [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
 
 In this section, I build a model capable of representing my data
 
-#### The International Geomagnetic Reference Field (IGRF):
+### The International Geomagnetic Reference Field (IGRF):
 IGRF is An IAGA ‘flagship product’
 - First produced 1965
 - The International Geomagnetic Reference Field (IGRF) is a series of mathematical models describing the large-scale internal part of the Earth’s magnetic field between epochs 1900 A.D. and the present.
 - The IGRF is used by scientists in studies of dynamics of the core field, space weather, local crustal magnetic field. It is also used by commercial organizations as a source of orientation information.
 - The latest version is IGRF-13
 
-#### IGRF – a collaborative effort:
+### IGRF – a collaborative effort:
 
 [IGRF-13](https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html) is a Main Field Models every 5 years from 1900 with Nmax = 10 to 1995 and Nmax = 13 for 2000 to 2020. D(efinitive)GRF up to 2015
 
