@@ -46,12 +46,27 @@ The magnetic vector components have been rotated into the geocentric NEC (North:
 
 ![CLF_Data_XYZ.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/CLF_Data_XYZ.png)
 
-We will evaluate the declination angle (D), the horizontal deviation of the field from geographic North.
+The signals that you can see in this data are: 
+- Daily oscillation: due to the rotation of the Earth driving ionospheric change through the day/night - this is the Sq variation ("solar quiet-day" variation)
+- Shift in baseline over the year: due to the change in the main magnetic field from the core - this is the secular variation (SV)
+- More random variations due to geomagnetic activity
 
+Then, I fetched the hourly dataset - these data are specially processed to improve data quality, over the straightforward hourly means calculated above from the minute data. For more information, see the article of [Macmillan, S., Olsen, N. (2013)](https://doi.org/10.5047/eps.2013.07.011)
+
+I evaluated the declination angle (D), the horizontal deviation of the field from geographic North.
 Next we summarise the data further by aggregating measurements over each month, evaluating the mean values over hourly intervals. For example, the mean declination at 10am across all days in January, the mean at 11am, and so on, repeated for each time of day and for each month. We then evaluate the offset of these declinations from the mean over the whole of each month - this is stored in D_variation in the resulting dataframe.
 
-
 ![Declination_1936_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1936_2020.png) ![Declination_1986_2003.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1986_2003.png) ![Declination_2000_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_2000_2020.png)
+
+In the following section, the hourly mean values for 2003 at CLF Observatory are plotted ordered by Bartels rotation number. (Solar rotations are numbered by the Bartels solar rotation number, with Day 1 of rotation 1 chosen as 8th February 1832)
+
+![CLF_Bartels_rotation_number.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/CLF_Bartels_rotation_number.png)
+
+The plot shows a number of the features of geomagnetic field behaviour:
+- The annual mean is plotted as a horizontal line in each row dividing the plots into sections ‘above’ and ‘below’ the mean. The proportions of the plots above and below changes as the year progresses because of the slow core field changes with time the secular variation.
+- The daily variation in each element is clear. Note the differences between winter and summer, which we also saw in the 3D contour plot above.
+- Although substantially attenuated by taking hourly means, times of magnetic disturbances are obvious.
+- The rows are plotted 27 days long because the equatorial rotation period, as seen from Earth, is approximately 27 days. As a result, if a region on the Sun responsible for a disturbance on one day survives a full rotation, it may cause a further disturbance 27 days later and this will line up vertically in the plots. 
 
 
 
