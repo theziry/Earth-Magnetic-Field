@@ -34,7 +34,34 @@ The aim of this notebook is to fetch & load Geomagnetic data at ground observato
 
 [INTERMAGNET](https://intermagnet.github.io/) is the International Real-time Magnetic Observatory Network, is the global network of observatories, monitoring the Earth's magnetic field. The [INTERMAGNET](https://intermagnet.github.io/) programme establishes a global network of cooperating geomagnetic observatories. It helps adopting modern standard specifications for measuring and recording equipment in order to facilitate data exchanges and the production of geomagnetic data in close to real time. In this notebooK we demonstrate geomagnetic ground observatory data access through [VirES](https://vires.services/) to access some ground observatory data.
 Data are available as three collections: 1 second and 1 minute cadences (INTERMAGNET definitive & quasi-definitive data), as well as specially derived hourly means over the past century (WDC).
+
 ![Data_Load.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Data_Load.png)
+
+Please note the data are under different usage terms than the Swarm data:
+- If you use the 1-second or 1-minute data, please refer to the INTERMAGNET data conditionsI
+- f you use the 1-hour data, please also refer to the WDC usage rules and cite the article about the preparation of these data:
+    Macmillan, S., Olsen, N. Observatory data and the Swarm mission. Earth Planet Sp 65, 15 (2013). https://doi.org/10.5047/eps.2013.07.011
+
+The magnetic vector components have been rotated into the geocentric NEC (North: X, East: Y, Centre: Z) frame rather than the geodetic frame, so that they are consistent with the Swarm data. This is in contrast with the data provided directly from observatories.
+
+![CLF_Data_XYZ.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/CLF_Data_XYZ.png)
+
+We will evaluate the declination angle (D), the horizontal deviation of the field from geographic North.
+
+Next we summarise the data further by aggregating measurements over each month, evaluating the mean values over hourly intervals. For example, the mean declination at 10am across all days in January, the mean at 11am, and so on, repeated for each time of day and for each month. We then evaluate the offset of these declinations from the mean over the whole of each month - this is stored in D_variation in the resulting dataframe.
+
+
+![Declination_1936_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1936_2020.png) ![Declination_1986_2003.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1986_2003.png) ![Declination_2000_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_2000_2020.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,7 +70,6 @@ Data are available as three collections: 1 second and 1 minute cadences (INTERMA
 
 #### Virtual Observatories:
 
-We Demonstrate geomagnetic ground observatory data access through VirES 
 
 
 
