@@ -30,7 +30,23 @@ In practice a signal may not be band-limited. If the signal includes frequency $
 ## Section 2: Data Visualisation
 ### [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
 
-The goal of this notebooK is to 
+The aim of this notebook is to fetch & load Geomagnetic data at ground observatories; download the data for a given observatory for a given year, and load them as a Pandas Dataframe.
+
+[INTERMAGNET](https://intermagnet.github.io/) is the International Real-time Magnetic Observatory Network, is the global network of observatories, monitoring the Earth's magnetic field. The [INTERMAGNET](https://intermagnet.github.io/) programme establishes a global network of cooperating geomagnetic observatories. It helps adopting modern standard specifications for measuring and recording equipment in order to facilitate data exchanges and the production of geomagnetic data in close to real time. In this notebooK we demonstrate geomagnetic ground observatory data access through [VirES](https://vires.services/) to access some ground observatory data.
+Data are available as three collections: 1 second and 1 minute cadences (INTERMAGNET definitive & quasi-definitive data), as well as specially derived hourly means over the past century (WDC).
+![Data_Load.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Data_Load.png)
+
+
+
+
+
+
+#### Virtual Observatories:
+
+We Demonstrate geomagnetic ground observatory data access through VirES 
+
+
+
 
 ## Section 3: Modelling the Geomagnetic Field
 ### [3-Spherical-Harmonic-Models.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/3-Spherical-Harmonic-Models%20.ipynb)
