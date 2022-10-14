@@ -60,6 +60,9 @@ Next we summarise the data further by aggregating measurements over each month, 
 
 In the following section, the hourly mean values for 2003 at CLF Observatory are plotted ordered by Bartels rotation number. (Solar rotations are numbered by the Bartels solar rotation number, with Day 1 of rotation 1 chosen as 8th February 1832)
 
+![Declination_1936_2020.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1936_2020.png,https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_1986_2003.png,https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/Declination_2000_2020.png)
+
+
 ![CLF_Bartels_rotation_number.png](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/image/CLF_Bartels_rotation_number.png)
 
 The plot shows a number of the features of geomagnetic field behaviour:
