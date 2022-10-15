@@ -17,15 +17,14 @@ The remainder of this work is organised in three sections (three notebooks) as f
 ## Section 1: Signal processing
 ## [1-EMF-Signal_Processing.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/1-EMF-Signal_Processing.ipynb)
 
-In this first notebook, I first started generating Synthetic timeseries data that contains a single harmonic component of period of $10 years$ sampled each month, than I deepen my analysis using real data; using long series of Chambon-la-Forêt $(CLF)$ observatory data which are monthly means, and discussing the observed Secular Variation evolutions over time.  
-
-In both parts (synthetic and real), I performed a spectral analysis on the signals and applied a Butterworth filters: Collecting monthly samples and Smoothing by means of a suitable filter with the attempt to preserve as much information as possible in the frequency band. 
+In this first notebook, you learn how to play with timeseries with python, with an application to the geomagnetic field recorded at the Chambon-la-Forêt $(CLF)$ observatory: performing a spectral analysis on the signals and applying a Butterworth filters and Smooth by means of a suitable filter with the attempt to preserve as much information as possible in the frequency band. 
 
 Looking through a finite duration ‘window’ at the signal (Regard as a multiplication in the time domain.), taking samples but the Fourier Transform is periodic. Therefore, to extract information at a particular frequency at least two samples per cycle must be taken, and this leads to the concept of the $Nyquist$ $frequency$ e.g. if the sampling rate is 10Hz, the maximum resolvable frequency is 5Hz. If there are higher frequencies present in the signal they are aliased – they masquerade as lower frequencies. 
 
 To resolve a sinusoidal signal it must be sampled at least twice per cycle. If the sampling rate is $f_{samp}$ then the maximum resolvable frequency is the $Nyquist$ $frequency$: $f_n= f_{samp}/2$ (Ideally, select the sampling rate to be at least the Nyquist rate required to resolve the maximum frequency component of a signal.).
 In practice a signal may not be band-limited. If the signal includes frequency $f$ and the sampling rate is $f_{samp}$ then the samples of signals at frequencies $f ± nf_{samp}$ are indistinguishable from $f_{sig}$  – they are ‘aliases’. Fourier analysis will put all the aliased signals at $f_{sig}$.
 
+I first started generating Synthetic timeseries data that contains a single harmonic component of period of $10 years$ sampled each month, than I deepen my analysis using real data; using long series of Chambon-la-Forêt $(CLF)$ observatory data which are monthly means, and discussing the observed Secular Variation evolutions over time. 
 
 ## Section 2: Data Visualisation
 ## [2-EMF-Observatory-Data-Visualisation.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/2-EMF-Observatory-Data-Visualisation.ipynb)
