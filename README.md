@@ -17,7 +17,7 @@ The remainder of this work is organised in three sections (three notebooks) as f
 ## Section 1: Signal processing
 ## [1-EMF-Signal_Processing.ipynb](https://github.com/thiziriamezza/Earth-Magnetic-Field/blob/main/1-EMF-Signal_Processing.ipynb)
 
-In this first notebook, you learn how to play with timeseries with python, with an application to the geomagnetic field recorded at the Chambon-la-Forêt $(CLF)$ observatory: performing a spectral analysis on the signals and applying a Butterworth filters and Smooth by means of a suitable filter with the attempt to preserve as much information as possible in the frequency band. 
+In this first notebook, you will learn how to play with timeseries with python, with an application to the geomagnetic field recorded at the Chambon-la-Forêt $(CLF)$ observatory: performing a spectral analysis on the signals and applying a Butterworth filters and Smooth by means of a suitable filter with the attempt to preserve as much information as possible in the frequency band. 
 
 Looking through a finite duration ‘window’ at the signal (Regard as a multiplication in the time domain.), taking samples but the Fourier Transform is periodic. Therefore, to extract information at a particular frequency at least two samples per cycle must be taken, and this leads to the concept of the $Nyquist$ $frequency$ e.g. if the sampling rate is 10Hz, the maximum resolvable frequency is 5Hz. If there are higher frequencies present in the signal they are aliased – they masquerade as lower frequencies. 
 
